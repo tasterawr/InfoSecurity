@@ -6,7 +6,7 @@ import java.util.List;
 
 public class SigSearchClass {
     public static List<String> searchForFiles(File directory, String signature){
-        List<String> filePaths = new ArrayList<>();
+        List<String> filePaths = new ArrayList<String>();
         File[] files = directory.listFiles();
 
         for (File file : files){

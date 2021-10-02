@@ -9,7 +9,7 @@ import java.util.List;
 
 public class BinaryReader {
     public static String readSignature(File f, int offset){
-        List<Byte> byteList = new ArrayList<>();
+        List<Byte> byteList = new ArrayList<Byte>();
         try{
             FileInputStream stream = new FileInputStream(f);
 
@@ -38,7 +38,7 @@ public class BinaryReader {
     }
 
     public static String readBytes(File f){
-        List<Byte> byteList = new ArrayList<>();
+        List<Byte> byteList = new ArrayList<Byte>();
         try{
             FileInputStream stream = new FileInputStream(f);
 
