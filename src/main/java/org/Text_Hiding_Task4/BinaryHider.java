@@ -93,7 +93,11 @@ public class BinaryHider {
             if (i + 8 > binaryString.length())
                 break;
             int code = Integer.parseInt(binaryString.substring(i, i+8), 2);
-            String symb = SymbolProvider.getSymbolByCode(code);
+            String symb = "";
+            if (code >= 192 && code <= 257)
+                symb = SymbolProvider.getSymbolByCode(code);
+            else
+                symb = String.valueOf((char)code);
             resultString.append(symb);
         }
         return resultString.toString();

@@ -19,6 +19,7 @@ public class MainClass {
         File directory = new File(dirPath);
 
         String sig = BinaryReader.readSignature(file, offset);
+        System.out.println(sig);
 
         System.out.println("\nDiscovered files:");
         List<String> filePaths = SigSearchClass.searchForFiles(directory, sig);

@@ -61,6 +61,5 @@ public class SymbolProvider {
             codeMap.put(code + 32, String.valueOf((char)(i + 32)));
             code++;
         }
-        return;
     }
 }
